@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: rgb(225, 225, 236);
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <div class="container my-5">
+    <div class="row fixed-top mt-2 my-3 py-4 justify-content-center">
+      <div class="col-10 d-flex justify-content-between align-items-center flex-wrap rounded-pill" style="background-color:rgb(241, 241, 245);">
+          <img class="img-bg-light my-2" src="assets/images/logo.svg" alt="" style="width: 150px;">
+          <a 
+          href="index.html"
+          type="button" 
+          class="btn btn-sm btn-dark rounded my-2">
+          <img src="assets/images/icon-sun.svg" alt="" style="width: 30px;">
+        </a>
+      </div>
+    </div>
+    <div class="row spaced-below-fixed mb-3 pt-4">
+      <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+          
+          <!-- Left: Title -->
+          <span class="fs-4 text-dark fw-bold">Extensions List</span>
+          
+          <!-- Right: Buttons -->
+          <div class="d-flex gap-2">
+            <a href="index-light.html" type="button" class="btn btn-sm rounded-pill text-dark border-3" style="background-color: rgb(241, 241, 245);">
+              All
+            </a>
+            <a href="active-light.html" type="button" class="btn btn-sm rounded-pill text-dark border-3" style="background-color: rgb(241, 241, 245);">
+              Active
+            </a>
+            <a href="inactive-light.html" type="button" class="btn btn-sm rounded-pill text-light border-3" style="background-color: rgb(231, 53, 53);">
+              Inactive
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="d-grid gap-1" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+      <div class="card border-1 h-100" style="background-color: rgb(241, 241, 245);">
+        <div class="card-body flex-column">
+            <button 
+              type="button"
+              class="btn btn-sm btn-info">
+              <img src="assets/images/logo-speed-boost.svg" alt="" style="width: 30px; height: auto;">
+            </button>
+            <span class="text-dark fw-bold mb-0">SpeedBoost</span> <br>
+            <small class="text-dark mb-3">Optimizes browser resourse usage to accelerate page loading</small>
+          <div class="mt-auto d-flex justify-content-between align-items-center mt-2">
+            <button type="button" class="btn btn-sm rounded-pill border-dark text-dark ">Remove</button>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>      
+      <div class="card border-1 h-100" style="background-color: rgb(241, 241, 245);">
+        <div class="card-body flex-column">
+            <button 
+              type="button"
+              class="btn btn-sm btn-info">
+              <img src="assets/images/logo-viewport-buddy.svg" alt="" style="width: 30px; height: auto;">
+            </button>
+            <span class="text-dark fw-bold mb-0">ViewPortBuddy</span> <br>
+            <small class="text-dark mb-3">Simulates various screen resolutions directly within the browser</small>
+          <div class="mt-auto d-flex justify-content-between align-items-center mt-2">
+            <button type="button" class="btn btn-sm rounded-pill border-dark text-dark ">Remove</button>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="card border-1 h-100" style="background-color: rgb(241, 241, 245);">
+        <div class="card-body flex-column">
+            <button 
+              type="button"
+              class="btn btn-sm btn-info">
+              <img src="assets/images/logo-grid-guides.svg" alt="" style="width: 30px; height: auto;">
+            </button>
+            <span class="text-dark fw-bold mb-0">Grid Guides</span> <br>
+            <small class="text-dark mb-3">Overlay customizable grids and alignment guideson any webpage</small>
+          <div class="mt-auto d-flex justify-content-between align-items-center mt-2">
+            <button type="button" class="btn btn-sm rounded-pill border-dark text-dark ">Remove</button>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="card border-1 h-100" style="background-color: rgb(241, 241, 245);">
+        <div class="card-body flex-column">
+            <button 
+              type="button"
+              class="btn btn-sm btn-info">
+              <img src="assets/images/logo-dom-snapshot.svg" alt="" style="width: 30px; height: auto;">
+            </button>
+            <span class="text-dark fw-bold mb-0">DOM Snapshot</span> <br>
+            <small class="text-dark mb-3">Capture and export DOM structures quickly</small>
+          <div class="mt-auto d-flex justify-content-between align-items-center mt-2">
+            <button type="button" class="btn btn-sm rounded-pill border-dark text-dark ">Remove</button>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Kenneth Ituma</a>.
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
