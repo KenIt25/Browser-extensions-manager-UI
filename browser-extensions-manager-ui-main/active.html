@@ -23,17 +23,19 @@
 <body>
   
   <div class="container my-5">
-    <div class="row fixed-top mt-2 my-3 py-4 justify-content-center">
+    <header class="row fixed-top mt-2 my-3 py-4 justify-content-center">
       <div class="col-10 d-flex justify-content-between align-items-center flex-wrap rounded-pill" style="background-color: rgb(36, 36, 91);">
-          <img class="img-bg-light my-2" src="assets/images/logo.svg" alt="" style="width: 150px;">
-          <button 
+          <img class="img-bg-light my-2" src="assets/images/logo.svg" alt="header-logo" style="width: 150px;">
+          <a 
+          href="active-light.html"
           type="button" 
-          class="btn btn-sm btn-dark rounded my-2">
-          <img src="assets/images/icon-sun.svg" alt="" style="width: 30px;">
-        </button>
+          class="btn btn-sm rounded my-2">
+          <img src="assets/images/icon-sun.svg" alt="sun-icon" style="width: 30px;">
+        </a>
       </div>
-    </div>
-    <div class="row spaced-below-fixed mb-3 pt-4">
+    </header>
+    <main class="main-content">
+      <div class="row spaced-below-fixed mb-3 pt-4">
       <div class="col-12">
         <div class="d-flex justify-content-between align-items-center flex-wrap">
           
@@ -42,7 +44,7 @@
           
           <!-- Right: Buttons -->
           <div class="d-flex gap-2">
-            <a href="index.html" type="button" class="btn btn-sm rounded-pill text-light border-3" style="background-color: rgb(52, 52, 113);">
+            <a href="index.html" type="button" class="btn btn-sm btn-outline-danger rounded-pill text-light border-3" style="background-color: rgb(52, 52, 113);">
               All
             </a>
             <a href="active.html" type="button" class="btn btn-sm rounded-pill text-light border-3" style="background-color: rgb(231, 53, 53);">
@@ -54,164 +56,162 @@
           </div>
         </div>
       </div>
-    </div>
-
-    
-    <div class="d-grid gap-1" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
-      <div class="card border-1 h-100" style="background-color: rgb(36, 36, 91);">
-        <div class="card-body flex-column">
-            <button 
-              type="button"
-              class="btn btn-sm btn-info">
-              <img src="assets/images/logo-devlens.svg" alt="" style="width: 30px; height: auto;">
-            </button>
-            <span class="text-light fw-bold mb-0">Devlens</span> <br>
-            <small class="text-light mb-3">Quick inspect page layouts and visualize element boundaries</small>
-          <div class="mt-auto d-flex justify-content-between align-items-center mt-2">
-            <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
+      </div>
+      <div class="d-grid gap-1" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+        <div class="card border-1 h-100" style="background-color: rgb(36, 36, 91);">
+          <div class="card-body flex-column">
+              <button 
+                type="button"
+                class="btn btn-sm btn-info">
+                <img src="assets/images/logo-devlens.svg" alt="devlen-logo" style="width: 30px; height: auto;">
+              </button>
+              <span class="text-light fw-bold mb-0">Devlens</span> <br>
+              <small class="text-light mb-3">Quick inspect page layouts and visualize element boundaries</small>
+            <div class="mt-auto d-flex justify-content-between align-items-center mt-2">
+              <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="card border-1 h-100" style="background-color: rgb(36, 36, 91);">
+          <div class="card-body flex-column">
+              <button 
+                type="button"
+                class="btn btn-sm btn-primary">
+                <img src="assets/images/logo-style-spy.svg" alt="logo-style-spy" style="width: 30px; height: auto;">
+              </button>
+              <span class="text-light fw-bold mb-0">StyleSpy</span> <br>
+              <small class="text-light mb-3">Instant analyze and copy CSS from any webpage element</small>
+            <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
+              <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>    
+        <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
+          <div class="card-body flex-column">
+              <button 
+                type="button"
+                class="btn btn-sm btn-secondary">
+                <img src="assets/images/logo-json-wizard.svg" alt="json-wizard-logo" style="width: 30px; height: auto;">
+              </button>
+              <span class="text-light fw-bold mb-0">JsonWizard</span> <br>
+              <small class="text-light mb-3">Formats, validates and prettifies JSON resourses in browser</small>
+            <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
+              <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
+          <div class="card-body flex-column">
+              <button 
+                type="button"
+                class="btn btn-sm btn-light">
+                <img src="assets/images/logo-tab-master-pro.svg" alt="tab-master-logo" style="width: 30px; height: auto;">
+              </button>
+              <span class="text-light fw-bold mb-0">TabMaster Pro</span> <br>
+              <small class="text-light mb-3">Organizes browser tabs into groups and sessions</small>
+            <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
+              <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
+          <div class="card-body flex-column">
+              <button 
+                type="button"
+                class="btn btn-sm btn-info">
+                <img src="assets/images/logo-markup-notes.svg" alt="markup-logo" style="width: 30px; height: auto;">
+              </button>
+              <span class="text-light fw-bold mb-0">Markup Notes</span> <br>
+              <small class="text-light mb-3">Enables annotation and notes directly onto webpages for collaborative debugging</small>
+            <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
+              <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
+          <div class="card-body flex-column">
+              <button 
+                type="button"
+                class="btn btn-sm btn-secondary">
+                <img src="assets/images/logo-palette-picker.svg" alt="palette-picker" style="width: 30px; height: auto;">
+              </button>
+              <span class="text-light fw-bold mb-0">Palette Picker</span> <br>
+              <small class="text-light mb-3">Instantly extracts color palettes from any webpage</small>
+            <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
+              <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
+          <div class="card-body flex-column">
+              <button 
+                type="button"
+                class="btn btn-sm btn-primary">
+                <img src="assets/images/logo-link-checker.svg" alt="link-checker-logo" style="width: 30px; height: auto;">
+              </button>
+              <span class="text-light fw-bold mb-0">Link Checker</span> <br>
+              <small class="text-light mb-3">Scans and highlights broken links on any page</small>
+            <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
+              <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
+          <div class="card-body flex-column">
+              <button 
+                type="button"
+                class="btn btn-sm btn-info">
+                <img src="assets/images/logo-console-plus.svg" alt="console-plus-logo" style="width: 30px; height: auto;">
+              </button>
+              <span class="text-light fw-bold mb-0">ConsolePlus</span> <br>
+              <small class="text-light mb-3">Enhanced developers console with advanced filteringand logging</small>
+            <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
+              <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
-      <div class="card border-1 h-100" style="background-color: rgb(36, 36, 91);">
-        <div class="card-body flex-column">
-            <button 
-              type="button"
-              class="btn btn-sm btn-info">
-              <img src="assets/images/logo-style-spy.svg" alt="" style="width: 30px; height: auto;">
-            </button>
-            <span class="text-light fw-bold mb-0">StyleSpy</span> <br>
-            <small class="text-light mb-3">Instant analyze and copy CSS from any webpage element</small>
-          <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
-            <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-      </div>    
-      <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
-        <div class="card-body flex-column">
-            <button 
-              type="button"
-              class="btn btn-sm btn-info">
-              <img src="assets/images/logo-json-wizard.svg" alt="" style="width: 30px; height: auto;">
-            </button>
-            <span class="text-light fw-bold mb-0">JsonWizard</span> <br>
-            <small class="text-light mb-3">Formats, validates and prettifies JSON resourses in browser</small>
-          <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
-            <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
-        <div class="card-body flex-column">
-            <button 
-              type="button"
-              class="btn btn-sm btn-info">
-              <img src="assets/images/logo-tab-master-pro.svg" alt="" style="width: 30px; height: auto;">
-            </button>
-            <span class="text-light fw-bold mb-0">TabMaster Pro</span> <br>
-            <small class="text-light mb-3">Organizes browser tabs into groups and sessions</small>
-          <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
-            <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
-        <div class="card-body flex-column">
-            <button 
-              type="button"
-              class="btn btn-sm btn-info">
-              <img src="assets/images/logo-markup-notes.svg" alt="" style="width: 30px; height: auto;">
-            </button>
-            <span class="text-light fw-bold mb-0">Markup Notes</span> <br>
-            <small class="text-light mb-3">Enables annotation and notes directly onto webpages for collaborative debugging</small>
-          <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
-            <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
-        <div class="card-body flex-column">
-            <button 
-              type="button"
-              class="btn btn-sm btn-info">
-              <img src="assets/images/logo-palette-picker.svg" alt="" style="width: 30px; height: auto;">
-            </button>
-            <span class="text-light fw-bold mb-0">Palette Picker</span> <br>
-            <small class="text-light mb-3">Instantly extracts color palettes from any webpage</small>
-          <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
-            <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
-        <div class="card-body flex-column">
-            <button 
-              type="button"
-              class="btn btn-sm btn-info">
-              <img src="assets/images/logo-link-checker.svg" alt="" style="width: 30px; height: auto;">
-            </button>
-            <span class="text-light fw-bold mb-0">Link Checker</span> <br>
-            <small class="text-light mb-3">Scans and highlights broken links on any page</small>
-          <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
-            <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="card border-1 h-100" style="background-color: rgb(32, 32, 99);">
-        <div class="card-body flex-column">
-            <button 
-              type="button"
-              class="btn btn-sm btn-info">
-              <img src="assets/images/logo-console-plus.svg" alt="" style="width: 30px; height: auto;">
-            </button>
-            <span class="text-light fw-bold mb-0">ConsolePlus</span> <br>
-            <small class="text-light mb-3">Enhanced developers console with advanced filteringand logging</small>
-          <div class="card-footer mt-auto d-flex justify-content-between align-items-center mt-2">
-            <button type="button" class="btn btn-sm rounded-pill border text-light ">Remove</button>
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
- 
+    </main>
   </div>
 
 
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Kenneth Ituma</a>.
-  </div>
+  </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

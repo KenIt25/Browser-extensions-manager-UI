@@ -52,5 +52,10 @@ input:checked + .slider:before {
 .spaced-below-fixed {
   margin-top: 120px; /* Adjust based on actual height of fixed-top row */
 }
+a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 
